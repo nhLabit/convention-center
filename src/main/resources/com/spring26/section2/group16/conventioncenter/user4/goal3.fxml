@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal3Controller"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="519.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal3Controller">
+   <children>
+      <ListView fx:id="infoLV" layoutX="180.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+      <ComboBox fx:id="hallCB" layoutX="225.0" layoutY="231.0" prefWidth="150.0" />
+      <Label layoutX="129.0" layoutY="235.0" text="Select a Hall:" />
+      <Label fx:id="lableL" layoutX="118.0" layoutY="344.0" prefHeight="46.0" prefWidth="378.0" text="Label" />
+      <Button layoutX="274.0" layoutY="284.0" mnemonicParsing="false" onAction="#checkOnClick" text="Check" />
+   </children>
 </AnchorPane>
