@@ -4,4 +4,9 @@ public class Goal8Controller
 {
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+    @javafx.fxml.FXML
+    public void logoutOnClick(ActionEvent actionEvent) {
+    }
+}
