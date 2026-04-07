@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user3DashboardController">
+   <children>
+      <Text fill="#d43030" layoutX="247.0" layoutY="42.0" stroke="#812020" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Text>
+      <Button layoutX="58.0" layoutY="82.0" mnemonicParsing="false" onAction="#loginOnClick" text="Login to the system" />
+      <Button layoutX="264.0" layoutY="82.0" mnemonicParsing="false" onAction="#newUserOnClick" text="Create new user" />
+      <Button layoutX="454.0" layoutY="82.0" mnemonicParsing="false" onAction="#userListOnClick" text="View user list" />
+      <Button layoutX="56.0" layoutY="274.0" mnemonicParsing="false" onAction="#bookingReportOnClick" text="View booking report" />
+      <Button layoutX="273.0" layoutY="274.0" mnemonicParsing="false" onAction="#logOutOnClick" text="Logout" />
+      <Button layoutX="453.0" layoutY="174.0" mnemonicParsing="false" onAction="#staffListOnClick" text="View staff list" />
+      <Button layoutX="271.0" layoutY="174.0" mnemonicParsing="false" onAction="#rolesOnClick" text="Manage roles" />
+      <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#hallInfoOnClick" text="Update hall information" />
+   </children>
+</AnchorPane>
