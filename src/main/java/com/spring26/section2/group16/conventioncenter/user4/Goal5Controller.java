@@ -1,9 +1,14 @@
 package com.spring26.section2.group16.conventioncenter.user4;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
 public class Goal5Controller
 {
     @javafx.fxml.FXML
-    private ComboBox methodCB;
+    private ComboBox <String>methodCB;
     @javafx.fxml.FXML
     private Label labelL;
     @javafx.fxml.FXML
