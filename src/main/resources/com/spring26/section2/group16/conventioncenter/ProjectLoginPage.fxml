@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="369.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.ProjectLoginPageController">
+   <children>
+      <Text fill="#cc09af" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulating operations of Bashundhara Convention Centre">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="userTypeComboBox" layoutX="246.0" layoutY="89.0" prefWidth="150.0" />
+      <TextField fx:id="userIDTextField" layoutX="246.0" layoutY="137.0" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="246.0" layoutY="182.0" />
+      <Button layoutX="289.0" layoutY="240.0" mnemonicParsing="false" onAction="#signinOnClick" text="Sign in" />
+      <Label layoutX="176.0" layoutY="93.0" text="User Type:" />
+      <Label layoutX="189.0" layoutY="141.0" text="User ID:" />
+      <Label layoutX="178.0" layoutY="186.0" text="Password:" />
+   </children>
+</AnchorPane>
