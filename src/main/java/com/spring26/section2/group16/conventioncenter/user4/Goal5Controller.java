@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 public class Goal5Controller
 {
     @javafx.fxml.FXML
-    private ComboBox methodCB;
+    private ComboBox <String>methodCB;
     @javafx.fxml.FXML
     private Label labelL;
     @javafx.fxml.FXML

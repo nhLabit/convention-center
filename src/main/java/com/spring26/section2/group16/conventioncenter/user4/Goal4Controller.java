@@ -13,7 +13,7 @@ public class Goal4Controller
     @javafx.fxml.FXML
     private Label labelL;
     @javafx.fxml.FXML
-    private ComboBox hallTF;
+    private ComboBox <String>hallTF;
     @javafx.fxml.FXML
     private DatePicker dateDP;
 
