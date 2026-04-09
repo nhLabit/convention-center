@@ -26,13 +26,44 @@ public class ProjectLoginPageController {
 
     @javafx.fxml.FXML
     public void signinOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardofUsers/user3Dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/spring26/section2/group16/conventioncenter/dashboardofUsers/user3Dashboard.fxml.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
         currentStage.show();
     }
-}
+//        String loginUserType = userTypeComboBox.getValue();
+//        if (loginUserType.equals("Admin")) {
+//            try {
+//                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardofUsers/user3Dashboard.fxml"));
+//                Scene dashboardScene = new Scene(fxmlLoader.load());
+//                Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+//                currentStage.setScene(dashboardScene);
+//                currentStage.show();
+//
+//            } catch (Exception e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+//        if (loginUserType.equals("Customer")) {
+//            try {
+//                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/dashboardofUsers/user4Dashboard.fxml"));
+//                Scene dashboardScene = new Scene(fxmlLoader.load());
+//                Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+//                currentStage.setScene(dashboardScene);
+//                currentStage.show();
+//
+//            } catch (Exception e) {
+//                throw new RuntimeException(e);
+//            }
+//
+//        }
+//
+
+
+
+
+
 
 
 

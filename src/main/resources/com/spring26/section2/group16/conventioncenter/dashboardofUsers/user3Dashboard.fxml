@@ -17,12 +17,17 @@
          </effect>
       </Text>
       <Button layoutX="58.0" layoutY="82.0" mnemonicParsing="false" onAction="#loginOnClick" text="Login to the system" />
-      <Button layoutX="264.0" layoutY="82.0" mnemonicParsing="false" onAction="#newUserOnClick" text="Create new user" />
-      <Button layoutX="454.0" layoutY="82.0" mnemonicParsing="false" onAction="#userListOnClick" text="View user list" />
-      <Button layoutX="56.0" layoutY="274.0" mnemonicParsing="false" onAction="#bookingReportOnClick" text="View booking report" />
-      <Button layoutX="273.0" layoutY="274.0" mnemonicParsing="false" onAction="#logOutOnClick" text="Logout" />
-      <Button layoutX="453.0" layoutY="174.0" mnemonicParsing="false" onAction="#staffListOnClick" text="View staff list" />
-      <Button layoutX="271.0" layoutY="174.0" mnemonicParsing="false" onAction="#rolesOnClick" text="Manage roles" />
-      <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#hallInfoOnClick" text="Update hall information" />
+      <Button layoutX="264.0" layoutY="82.0" mnemonicParsing="false" onAction="#creteNewUserOnClick" text="Create new user" />
+      <Button layoutX="454.0" layoutY="82.0" mnemonicParsing="false" onAction="#viewUserListOnClick" text="View user list" />
+      <Button layoutX="56.0" layoutY="274.0" mnemonicParsing="false" onAction="#BookingReportOnClick" text="View booking report" />
+      <Button layoutX="273.0" layoutY="274.0" mnemonicParsing="false" onAction="#LogOutOnClick" text="Logout" />
+      <Button layoutX="453.0" layoutY="174.0" mnemonicParsing="false" onAction="#StaffListOnClick" text="View staff list" />
+      <Button layoutX="271.0" layoutY="174.0" mnemonicParsing="false" onAction="#RolesOnClick" text="Manage roles" />
+      <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#HallInfoOnClick" text="Update hall information" />
+      <Button layoutX="461.0" layoutY="274.0" mnemonicParsing="false" onAction="#homeOnClick" text="Home" textFill="#d42a10" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
