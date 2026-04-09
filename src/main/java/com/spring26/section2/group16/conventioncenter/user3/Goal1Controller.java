@@ -25,4 +25,8 @@ public class Goal1Controller
     @javafx.fxml.FXML
     public void addUserOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }

@@ -9,6 +9,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class ProjectLoginPageController {
     @javafx.fxml.FXML
     private ComboBox<String> userTypeComboBox;
@@ -23,34 +25,39 @@ public class ProjectLoginPageController {
     }
 
     @javafx.fxml.FXML
-    public void signinOnClick(ActionEvent actionEvent) {
-        String loginUserType = userTypeComboBox.getValue();
-        if (loginUserType.equals("Admin")) {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/spring26/section2/group16/conventioncenter/user3.fxml"));
-                Scene dashboardScene = new Scene(fxmlLoader.load());
-                Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-                currentStage.setScene(dashboardScene);
-                currentStage.show();
-
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-
-
-        }
-
-        if (loginUserType.equals("Customer")){
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/spring26/section2/group16/conventioncenter/user4.fxml"));
-                Scene dashboardScene = new Scene(fxmlLoader.load());
-                Stage currentStage =(Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-                currentStage.setScene(dashboardScene);
-                currentStage.show();
-
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
+    public void signinOnClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardofUsers/user3Dashboard.fxml"));
+        Scene dashboardScene = new Scene(fxmlLoader.load());
+        Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        currentStage.setScene(dashboardScene);
+        currentStage.show();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ProjectLoginPage.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load());
+//        stage.setTitle("Hello!");
+//        stage.setScene(scene);
+//        stage.show();
+
+
+

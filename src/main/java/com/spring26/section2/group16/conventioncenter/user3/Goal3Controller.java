@@ -23,4 +23,8 @@ public class Goal3Controller
     @javafx.fxml.FXML
     public void filterOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }

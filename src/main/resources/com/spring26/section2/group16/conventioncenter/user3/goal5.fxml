@@ -4,13 +4,19 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user3.Goal5Controller">
+<AnchorPane prefHeight="362.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user3.Goal5Controller">
    <children>
-      <DatePicker fx:id="dateDP" layoutX="198.0" layoutY="43.0" />
-      <Label layoutX="109.0" layoutY="47.0" text="Select a Date:" />
-      <Button layoutX="198.0" layoutY="95.0" mnemonicParsing="false" onAction="#generateOnClick" text="Generate" />
-      <Label fx:id="labelINFO" layoutX="137.0" layoutY="145.0" prefHeight="98.0" prefWidth="303.0" text="label" />
+      <DatePicker fx:id="dateDP" layoutX="198.0" layoutY="60.0" />
+      <Label layoutX="105.0" layoutY="64.0" text="Select a Date:" />
+      <Button layoutX="198.0" layoutY="113.0" mnemonicParsing="false" onAction="#generateOnClick" text="Generate" />
+      <Label fx:id="labelINFO" layoutX="111.0" layoutY="161.0" prefHeight="98.0" prefWidth="303.0" text="label" />
+      <Label layoutX="177.0" layoutY="7.0" text="View booking report" textFill="#d90b0b">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="472.0" layoutY="295.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
    </children>
 </AnchorPane>
