@@ -12,7 +12,7 @@ public class goal1Controller
     @javafx.fxml.FXML
     private DatePicker eventDatedatePicker;
     @javafx.fxml.FXML
-    private ComboBox hallCombobox;
+    private ComboBox<String> hallCombobox;
 
     @javafx.fxml.FXML
     public void initialize() {
