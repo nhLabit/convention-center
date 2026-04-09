@@ -1,5 +1,9 @@
 package com.spring26.section2.group16.conventioncenter.user4;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
 public class Goal7Controller
 {
     @javafx.fxml.FXML
