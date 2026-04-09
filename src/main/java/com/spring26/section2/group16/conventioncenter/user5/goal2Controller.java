@@ -29,4 +29,8 @@ public class goal2Controller
     @javafx.fxml.FXML
     public void ViewDetailsOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void DashboardOnClick(ActionEvent actionEvent) {
+    }
 }

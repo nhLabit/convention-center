@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user5.goal3Controller">
    <children>
       <Label layoutX="207.0" layoutY="50.0" text="Update Event">
@@ -24,5 +23,6 @@
       <ComboBox fx:id="HallComboBox" layoutX="157.0" layoutY="170.0" prefHeight="26.0" prefWidth="175.0" />
       <Button layoutX="158.0" layoutY="229.0" mnemonicParsing="false" onAction="#UpdatebuttonOnClick" text="Update" />
       <Button layoutX="220.0" layoutY="229.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="Back" />
+      <Button layoutX="470.0" layoutY="318.0" mnemonicParsing="false" onAction="#DashboardOnClick" text="Dashboard" />
    </children>
 </AnchorPane>

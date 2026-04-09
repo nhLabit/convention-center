@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user5.goal2Controller">
    <children>
       <Label layoutX="229.0" layoutY="47.0" text="View Events">
@@ -27,5 +26,6 @@
       </TableView>
       <Button layoutX="213.0" layoutY="297.0" mnemonicParsing="false" onAction="#searchOnClick" prefHeight="26.0" prefWidth="72.0" text="Search" />
       <Button layoutX="300.0" layoutY="297.0" mnemonicParsing="false" onAction="#ViewDetailsOnClick" prefHeight="26.0" prefWidth="112.0" text="View Details" />
+      <Button layoutX="487.0" layoutY="334.0" mnemonicParsing="false" onAction="#DashboardOnClick" text="Dashboard" />
    </children>
 </AnchorPane>

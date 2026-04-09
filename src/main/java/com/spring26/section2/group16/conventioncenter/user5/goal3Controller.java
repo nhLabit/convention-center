@@ -25,4 +25,8 @@ public class goal3Controller
     @javafx.fxml.FXML
     public void BackButtonOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void DashboardOnClick(ActionEvent actionEvent) {
+    }
 }

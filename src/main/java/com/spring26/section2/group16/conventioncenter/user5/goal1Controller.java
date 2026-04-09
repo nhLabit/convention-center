@@ -25,4 +25,8 @@ public class goal1Controller
     @javafx.fxml.FXML
     public void cancelbuttonOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void DashboardOnClick(ActionEvent actionEvent) {
+    }
 }
