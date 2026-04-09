@@ -10,6 +10,10 @@ public class Goal7Controller
     private ComboBox staffNameCB;
     @javafx.fxml.FXML
     private Label labelL;
+    @javafx.fxml.FXML
+    private TableView staffNameTV;
+    @javafx.fxml.FXML
+    private TableColumn staffNameCol;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -17,5 +21,9 @@ public class Goal7Controller
 
     @javafx.fxml.FXML
     public void selectOnClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
     }
 }

@@ -21,4 +21,8 @@ public class Goal6Controller
     @javafx.fxml.FXML
     public void saveOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }

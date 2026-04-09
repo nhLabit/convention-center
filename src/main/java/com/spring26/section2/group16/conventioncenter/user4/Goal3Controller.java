@@ -8,11 +8,13 @@ import javafx.scene.control.ListView;
 public class Goal3Controller
 {
     @javafx.fxml.FXML
-    private ListView infoLV;
-    @javafx.fxml.FXML
     private Label lableL;
     @javafx.fxml.FXML
     private ComboBox hallCB;
+    @javafx.fxml.FXML
+    private TableColumn hallNameCol;
+    @javafx.fxml.FXML
+    private TableView hallTV;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -24,5 +26,9 @@ public class Goal3Controller
 
     @javafx.fxml.FXML
     public void checkOnClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
     }
 }

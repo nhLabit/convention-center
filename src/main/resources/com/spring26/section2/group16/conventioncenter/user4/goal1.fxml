@@ -5,7 +5,7 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="354.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal1Controller">
    <children>
@@ -17,5 +17,11 @@
       <Label layoutX="129.0" layoutY="82.0" text="Enter a Email:" />
       <Label layoutX="75.0" layoutY="126.0" text="Enter a Strong Password:" />
       <Label fx:id="labelL" layoutX="108.0" layoutY="232.0" prefHeight="48.0" prefWidth="328.0" text="Label" />
+      <Label layoutX="217.0" text="Register Account" textFill="#c73636">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="449.0" layoutY="294.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
    </children>
 </AnchorPane>

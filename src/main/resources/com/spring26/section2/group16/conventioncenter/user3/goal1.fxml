@@ -5,16 +5,23 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="335.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user3.Goal1Controller">
+<AnchorPane prefHeight="346.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user3.Goal1Controller">
    <children>
-      <TextField fx:id="usernameTF" layoutX="262.0" layoutY="40.0" />
-      <PasswordField fx:id="passwordTF" layoutX="263.0" layoutY="85.0" />
-      <Button layoutX="314.0" layoutY="122.0" mnemonicParsing="false" onAction="#loginOnClick" text="Login" />
-      <Label layoutX="177.0" layoutY="44.0" text="Username:" />
-      <Label layoutX="177.0" layoutY="89.0" text="Password:" />
-      <Label fx:id="labelL" layoutX="177.0" layoutY="216.0" prefHeight="52.0" prefWidth="294.0" text="Label" />
-      <Label layoutX="223.0" layoutY="168.0" prefHeight="26.0" prefWidth="78.0" text="No account? " />
-      <Button layoutX="305.0" layoutY="168.0" mnemonicParsing="false" onAction="#addUserOnClick" text="Add User" />
+      <TextField fx:id="usernameTF" layoutX="262.0" layoutY="71.0" />
+      <PasswordField fx:id="passwordTF" layoutX="262.0" layoutY="117.0" />
+      <Button layoutX="314.0" layoutY="160.0" mnemonicParsing="false" onAction="#loginOnClick" text="Login" />
+      <Label layoutX="176.0" layoutY="75.0" text="Username:" />
+      <Label layoutX="178.0" layoutY="121.0" text="Password:" />
+      <Label fx:id="labelL" layoutX="167.0" layoutY="264.0" prefHeight="52.0" prefWidth="294.0" text="Label" />
+      <Label layoutX="231.0" layoutY="216.0" prefHeight="26.0" prefWidth="78.0" text="No account? " />
+      <Button layoutX="314.0" layoutY="217.0" mnemonicParsing="false" onAction="#addUserOnClick" text="Add User" />
+      <Label layoutX="220.0" layoutY="14.0" text="Login to the system" textFill="#811cb4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="494.0" layoutY="296.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
    </children>
 </AnchorPane>

@@ -18,4 +18,8 @@ public class Goal5Controller
     @javafx.fxml.FXML
     public void generateOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }

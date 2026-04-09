@@ -21,4 +21,8 @@ public class Goal2Controller
     @javafx.fxml.FXML
     public void loginOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }

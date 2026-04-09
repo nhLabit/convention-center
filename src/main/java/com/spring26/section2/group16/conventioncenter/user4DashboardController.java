@@ -28,7 +28,7 @@ public class user4DashboardController
     public void cancelBookingOnClick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void bookingHistoryOnClick(ActionEvent actionEvent) {
     }
 
@@ -38,5 +38,9 @@ public class user4DashboardController
 
     @javafx.fxml.FXML
     public void loginOnClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void editBookingOnClick(ActionEvent actionEvent) {
     }
 }

@@ -24,4 +24,8 @@ public class Goal4Controller
     @javafx.fxml.FXML
     public void bookingOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }

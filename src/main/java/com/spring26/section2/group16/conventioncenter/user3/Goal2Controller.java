@@ -23,4 +23,8 @@ public class Goal2Controller
     @javafx.fxml.FXML
     public void saveOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashBoardOnClick(ActionEvent actionEvent) {
+    }
 }

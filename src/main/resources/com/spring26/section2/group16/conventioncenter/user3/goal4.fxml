@@ -2,16 +2,28 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user3.Goal4Controller">
    <children>
-      <ComboBox fx:id="hallCB" layoutX="150.0" layoutY="43.0" prefWidth="150.0" />
-      <Label fx:id="labelINFO1" layoutX="150.0" layoutY="80.0" prefHeight="107.0" prefWidth="351.0" text="Label" />
-      <Label layoutX="72.0" layoutY="47.0" text="Select a Hall:" />
-      <Button layoutX="150.0" layoutY="209.0" mnemonicParsing="false" onAction="#doneOnClick" text="Done" />
-      <Label fx:id="labelL" layoutX="72.0" layoutY="258.0" prefHeight="49.0" prefWidth="318.0" text="Label" />
+      <ComboBox fx:id="hallCB" layoutX="156.0" layoutY="67.0" prefWidth="150.0" />
+      <Label layoutX="72.0" layoutY="71.0" text="Select a Hall:" />
+      <Button layoutX="157.0" layoutY="232.0" mnemonicParsing="false" onAction="#updateOnClick" text="Update" />
+      <Label fx:id="labelL" layoutX="94.0" layoutY="275.0" prefHeight="49.0" prefWidth="318.0" text="Label" />
+      <Label layoutX="195.0" layoutY="14.0" text="Update hall information" textFill="#e41d1d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="482.0" layoutY="337.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
+      <Button layoutX="156.0" layoutY="119.0" mnemonicParsing="false" onAction="#editOnClick" text="Edit" />
+      <TextField fx:id="guestTF" layoutX="157.0" layoutY="155.0" />
+      <Label layoutX="82.0" layoutY="159.0" text="Total Guest:" />
+      <DatePicker fx:id="dateDatePicker" layoutX="157.0" layoutY="187.0" />
+      <Label layoutX="86.0" layoutY="191.0" text="New Date:" />
    </children>
 </AnchorPane>

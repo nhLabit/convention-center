@@ -23,4 +23,8 @@ public class Goal1Controller
     @javafx.fxml.FXML
     public void signupOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) {
+    }
 }
