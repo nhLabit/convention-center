@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.spring26.section2.group16.conventioncenter.user5.goal8Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user5.goal8Controller">
+   <children>
+      <Label layoutX="203.0" layoutY="39.0" text="View Event Details">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="EventTableView" layoutX="91.0" layoutY="100.0" prefHeight="133.0" prefWidth="371.0">
+        <columns>
+          <TableColumn fx:id="EventCol" prefWidth="370.40001220703124" text="Event" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="SelectHallCombox" layoutX="150.0" layoutY="254.0" prefWidth="150.0" />
+      <Label layoutX="91.0" layoutY="258.0" text="Select Hall:" />
+      <Label fx:id="outputShowLabel" layoutX="136.0" layoutY="310.0" prefHeight="70.0" prefWidth="175.0" text="Label" />
+      <Button layoutX="410.0" layoutY="254.0" mnemonicParsing="false" onAction="#SelectOnClick" text="Select" />
+      <Button layoutX="497.0" layoutY="345.0" mnemonicParsing="false" onAction="#DashboardOnClcik" text="Dashboard" />
+   </children>
 </AnchorPane>
