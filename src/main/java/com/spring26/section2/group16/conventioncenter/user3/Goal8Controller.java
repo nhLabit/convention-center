@@ -5,6 +5,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,11 +15,30 @@ import java.io.IOException;
 public class Goal8Controller
 {
     @javafx.fxml.FXML
+    private TableColumn nameCol;
+    @javafx.fxml.FXML
+    private Label labelL;
+    @javafx.fxml.FXML
+    private TableView infoTV;
+
+    @javafx.fxml.FXML
     public void initialize() {
     }
 
+    //    public void logoutOnClick(ActionEvent actionEvent) throws IOException {
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardofUsers/user3Dashboard.fxml"));
+//        Scene dashboardScene = new Scene(fxmlLoader.load());
+//        Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+//        currentStage.setScene(dashboardScene);
+//        currentStage.show();
+//    }
+
     @javafx.fxml.FXML
-    public void logoutOnClick(ActionEvent actionEvent) throws IOException {
+    public void deleteOnClick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void dashboardOnClick(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardofUsers/user3Dashboard.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();

@@ -4,6 +4,7 @@ module com.spring26.section2.group16.conventioncenter {
 
     opens com.spring26.section2.group16.conventioncenter to javafx.fxml;
     opens com.spring26.section2.group16.conventioncenter.user3 to javafx.fxml;
+    opens com.spring26.section2.group16.conventioncenter.user4 to javafx.fxml;
 
     exports com.spring26.section2.group16.conventioncenter;
 }

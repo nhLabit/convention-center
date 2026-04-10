@@ -5,33 +5,26 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class Goal1Controller
 {
-    @javafx.fxml.FXML
-    private TextField usernameTF;
-    @javafx.fxml.FXML
-    private PasswordField passwordTF;
+
+
     @javafx.fxml.FXML
     private Label labelL;
+    @javafx.fxml.FXML
+    private ComboBox categoryCB;
+    @javafx.fxml.FXML
+    private CheckBox assignTechnicianCheckBox;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public void loginOnClick(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void addUserOnClick(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void dashboardOnClick(ActionEvent actionEvent) throws IOException {
@@ -40,5 +33,9 @@ public class Goal1Controller
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
         currentStage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void saveOnClick(ActionEvent actionEvent) {
     }
 }

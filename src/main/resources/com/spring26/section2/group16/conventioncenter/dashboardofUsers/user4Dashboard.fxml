@@ -12,13 +12,18 @@
             <Font size="26.0" />
          </font>
       </Text>
-      <Button layoutX="40.0" layoutY="75.0" mnemonicParsing="false" onAction="#registerAccountOnClick" text="Register Account" />
-      <Button layoutX="225.0" layoutY="75.0" mnemonicParsing="false" onAction="#loginOnClick" text="Login" />
+      <Button layoutX="40.0" layoutY="75.0" mnemonicParsing="false" onAction="#registerAccountOnClick" text="Customer available services" />
+      <Button layoutX="225.0" layoutY="75.0" mnemonicParsing="false" onAction="#loginOnClick" text="Write a Review" />
       <Button layoutX="420.0" layoutY="75.0" mnemonicParsing="false" onAction="#viewHallsOnClick" text=" View halls" />
       <Button layoutX="40.0" layoutY="161.0" mnemonicParsing="false" onAction="#bookHallOnClick" text="Book hall" />
       <Button layoutX="222.0" layoutY="161.0" mnemonicParsing="false" onAction="#makePaymentOnClick" text="Make payment" />
       <Button layoutX="420.0" layoutY="161.0" mnemonicParsing="false" onAction="#editBookingOnClick" text="Edit Booking" />
       <Button layoutX="40.0" layoutY="260.0" mnemonicParsing="false" onAction="#cancelBookingOnClick" text="Cancel booking" />
-      <Button layoutX="225.0" layoutY="260.0" mnemonicParsing="false" onAction="#logoutOnClick" text="Logout " />
+      <Button layoutX="225.0" layoutY="260.0" mnemonicParsing="false" onAction="#logoutOnClick" text="View Pricing Information" />
+      <Button layoutX="420.0" layoutY="260.0" mnemonicParsing="false" onAction="#homeOnClick" text="Home" textFill="#0dc926">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
