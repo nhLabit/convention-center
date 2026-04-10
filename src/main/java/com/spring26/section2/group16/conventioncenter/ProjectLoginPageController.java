@@ -34,7 +34,7 @@ public class ProjectLoginPageController {
             currentStage.setScene(dashboardScene);
             currentStage.show();
 
-            }
+        }
 
         if (loginUserType.equals("Customer")) {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/dashboardofUsers/user4Dashboard.fxml"));
@@ -42,10 +42,25 @@ public class ProjectLoginPageController {
             Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             currentStage.setScene(dashboardScene);
             currentStage.show();
-            }
+        }
+        if (loginUserType.equals("Event Manager")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/dashboardofUsers/user5Dashboard.fxml"));
+            Scene dashboardScene = new Scene(fxmlLoader.load());
+            Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            currentStage.setScene(dashboardScene);
+            currentStage.show();
+
 
         }
+        if (loginUserType.equals("Accountant")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/dashboardofUsers/user6Dashboard.fxml"));
+            Scene dashboardScene = new Scene(fxmlLoader.load());
+            Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            currentStage.setScene(dashboardScene);
+            currentStage.show();
+        }
     }
+}
 
 
 
