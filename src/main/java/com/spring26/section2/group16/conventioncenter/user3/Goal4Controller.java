@@ -26,6 +26,8 @@ public class Goal4Controller
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        hallCB.getItems().addAll("Multipurpose Hall", "Auditorium");
     }
 
     @Deprecated
