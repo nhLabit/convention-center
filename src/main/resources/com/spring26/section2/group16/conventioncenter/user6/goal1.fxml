@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.spring26.section2.group16.conventioncenter.user6.goal1Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user6.goal1Controller">
+   <children>
+      <Label layoutX="220.0" layoutY="35.0" text="View Payments">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ViewPaymentstableView" layoutX="55.0" layoutY="100.0" prefHeight="122.0" prefWidth="512.0">
+        <columns>
+          <TableColumn fx:id="paymentIDCol" prefWidth="126.4000244140625" text="Payment ID" />
+          <TableColumn fx:id="EventNameCol" prefWidth="109.60003662109375" text="Event Name" />
+            <TableColumn fx:id="AmountCol" prefWidth="119.199951171875" text="Amount" />
+            <TableColumn fx:id="StatusCol" prefWidth="156.79998779296875" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="418.0" layoutY="235.0" mnemonicParsing="false" onAction="#ViewDetailsOnClick" text="View Details" />
+      <Button layoutX="515.0" layoutY="235.0" mnemonicParsing="false" onAction="#BackOnClick" text="Back" />
+      <Button layoutX="492.0" layoutY="306.0" mnemonicParsing="false" onAction="#DashboardOnClick" text="Dashboard" />
+   </children>
 </AnchorPane>
