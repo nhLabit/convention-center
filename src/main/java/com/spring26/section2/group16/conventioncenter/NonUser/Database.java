@@ -3,14 +3,12 @@ package com.spring26.section2.group16.conventioncenter.NonUser;
 import java.time.LocalDate;
 
 public class Database {
-    private int userID, userName, userRole, hallCapacity;
-    private String maintenanceCategory, hallName, roleName, staffName, serviceName, reviewerName;
+    private int userID, hallCapacity;
+    private String maintenanceCategory, hallName, roleName, staffName, serviceName, reviewerName, userRole, userName;
     private LocalDate bookingDate;
 
-    public Database(int userID, int userName, int userRole, int hallCapacity, String maintenanceCategory, String hallName, String roleName, String staffName, String serviceName, String reviewerName, LocalDate bookingDate) {
+    public Database(int userID, int hallCapacity, String maintenanceCategory, String hallName, String roleName, String staffName, String serviceName, String reviewerName, String userRole, String userName, LocalDate bookingDate) {
         this.userID = userID;
-        this.userName = userName;
-        this.userRole = userRole;
         this.hallCapacity = hallCapacity;
         this.maintenanceCategory = maintenanceCategory;
         this.hallName = hallName;
@@ -18,6 +16,8 @@ public class Database {
         this.staffName = staffName;
         this.serviceName = serviceName;
         this.reviewerName = reviewerName;
+        this.userRole = userRole;
+        this.userName = userName;
         this.bookingDate = bookingDate;
     }
 
@@ -27,22 +27,6 @@ public class Database {
 
     public void setUserID(int userID) {
         this.userID = userID;
-    }
-
-    public int getUserName() {
-        return userName;
-    }
-
-    public void setUserName(int userName) {
-        this.userName = userName;
-    }
-
-    public int getUserRole() {
-        return userRole;
-    }
-
-    public void setUserRole(int userRole) {
-        this.userRole = userRole;
     }
 
     public int getHallCapacity() {
@@ -101,6 +85,22 @@ public class Database {
         this.reviewerName = reviewerName;
     }
 
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public LocalDate getBookingDate() {
         return bookingDate;
     }
@@ -113,8 +113,6 @@ public class Database {
     public String toString() {
         return "Database{" +
                 "userID=" + userID +
-                ", userName=" + userName +
-                ", userRole=" + userRole +
                 ", hallCapacity=" + hallCapacity +
                 ", maintenanceCategory='" + maintenanceCategory + '\'' +
                 ", hallName='" + hallName + '\'' +
@@ -122,6 +120,8 @@ public class Database {
                 ", staffName='" + staffName + '\'' +
                 ", serviceName='" + serviceName + '\'' +
                 ", reviewerName='" + reviewerName + '\'' +
+                ", userRole='" + userRole + '\'' +
+                ", userName='" + userName + '\'' +
                 ", bookingDate=" + bookingDate +
                 '}';
     }

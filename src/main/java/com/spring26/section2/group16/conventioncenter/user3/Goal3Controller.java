@@ -1,6 +1,7 @@
 package com.spring26.section2.group16.conventioncenter.user3;
 
 import com.spring26.section2.group16.conventioncenter.HelloApplication;
+import com.spring26.section2.group16.conventioncenter.NonUser.Database;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -12,27 +13,33 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Goal3Controller
 {
     @javafx.fxml.FXML
-    private TableView UserListTV;
+    private TableView<Database> UserListTV;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableColumn<Database, String> nameCol;
     @javafx.fxml.FXML
-    private ComboBox filterDataCB;
+    private ComboBox<String> filterDataCB;
     @javafx.fxml.FXML
-    private TableColumn roleCol;
+    private TableColumn<Database, String> roleCol;
+
+    private List<Database> databaseArray1 = new ArrayList<>();
+
+
 
     @javafx.fxml.FXML
     public void initialize() {
 
         filterDataCB.getItems().addAll("Admin", "Guest", "Customer", "Developer");
 
-        nameCol.setCellValueFactory(new PropertyValueFactory<>());
-        roleCol.setCellValueFactory(new PropertyValueFactory<>());
+        nameCol.setCellValueFactory(new PropertyValueFactory<>("roleName"));
+        roleCol.setCellValueFactory(new PropertyValueFactory<>("staffName"));
 
-        UserListTV.getItems().addAll();
+        UserListTV.getItems().addAll(databaseArray1);
     }
 
     @javafx.fxml.FXML
