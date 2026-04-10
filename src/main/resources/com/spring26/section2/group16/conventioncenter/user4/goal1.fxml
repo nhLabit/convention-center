@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="354.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal1Controller">
+<AnchorPane prefHeight="426.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal1Controller">
    <children>
-      <TextField fx:id="nameTF" layoutX="215.0" layoutY="39.0" />
-      <TextField fx:id="emailTF" layoutX="215.0" layoutY="78.0" />
-      <PasswordField fx:id="passwordPF" layoutX="216.0" layoutY="122.0" />
-      <Button defaultButton="true" layoutX="257.0" layoutY="163.0" mnemonicParsing="false" onAction="#signupOnClick" text="Signup " textFill="#540a69" />
-      <Label layoutX="110.0" layoutY="43.0" text="Enter Your Name:" />
-      <Label layoutX="129.0" layoutY="82.0" text="Enter a Email:" />
-      <Label layoutX="75.0" layoutY="126.0" text="Enter a Strong Password:" />
-      <Label fx:id="labelL" layoutX="108.0" layoutY="232.0" prefHeight="48.0" prefWidth="328.0" text="Label" />
-      <Label layoutX="217.0" text="Register Account" textFill="#c73636">
+      <Label layoutX="91.0" layoutY="221.0" text="Select a Service:" />
+      <Label fx:id="labelL" layoutX="78.0" layoutY="307.0" prefHeight="48.0" prefWidth="328.0" text="Label" />
+      <Label layoutX="198.0" text="Customer available services" textFill="#c73636">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="449.0" layoutY="294.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
+      <Button layoutX="462.0" layoutY="376.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
+      <TableView fx:id="serviceTV" layoutX="91.0" layoutY="42.0" prefHeight="162.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="survicesCol" prefWidth="362.3999969482422" text="Services" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="selectServiceCB" layoutX="197.0" layoutY="217.0" prefWidth="150.0" />
+      <Button layoutX="221.0" layoutY="252.0" mnemonicParsing="false" onAction="#loadOnClick" text="Load" />
    </children>
 </AnchorPane>

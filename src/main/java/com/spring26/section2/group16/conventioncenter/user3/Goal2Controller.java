@@ -5,31 +5,31 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class Goal2Controller
 {
-    @javafx.fxml.FXML
-    private TextField nameTF;
-    @javafx.fxml.FXML
-    private ComboBox roleCB;
-    @javafx.fxml.FXML
-    private TextField emailTF;
+
     @javafx.fxml.FXML
     private Label labelL;
+    @javafx.fxml.FXML
+    private TableView userListTV;
+    @javafx.fxml.FXML
+    private ComboBox userTypeCB;
+    @javafx.fxml.FXML
+    private TableColumn nameCol;
+    @javafx.fxml.FXML
+    private TableColumn userIDCol;
+    @javafx.fxml.FXML
+    private TableColumn roleCol;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public void saveOnClick(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void dashBoardOnClick(ActionEvent actionEvent) throws IOException {
@@ -38,5 +38,9 @@ public class Goal2Controller
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
         currentStage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void doneOnClick(ActionEvent actionEvent) {
     }
 }
