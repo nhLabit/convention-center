@@ -17,12 +17,14 @@ public class Goal1Controller
     @javafx.fxml.FXML
     private Label labelL;
     @javafx.fxml.FXML
-    private ComboBox categoryCB;
+    private ComboBox<String> categoryCB;
     @javafx.fxml.FXML
     private CheckBox assignTechnicianCheckBox;
 
     @javafx.fxml.FXML
     public void initialize() {
+        categoryCB.getItems().addAll("Electrical", "Mechanical", "Development");
+
     }
 
 
@@ -37,5 +39,8 @@ public class Goal1Controller
 
     @javafx.fxml.FXML
     public void saveOnClick(ActionEvent actionEvent) {
+
+
+
     }
 }

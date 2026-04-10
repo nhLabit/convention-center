@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -25,10 +26,23 @@ public class Goal3Controller
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        filterDataCB.getItems().addAll("Admin", "Guest", "Customer", "Developer");
+
+        nameCol.setCellValueFactory(new PropertyValueFactory<>());
+        roleCol.setCellValueFactory(new PropertyValueFactory<>());
+
+        UserListTV.getItems().addAll();
     }
 
     @javafx.fxml.FXML
     public void filterOnClick(ActionEvent actionEvent) {
+        if (filterDataCB.getValue().equals("Customer")) {
+
+
+    }
+
+
     }
 
     @javafx.fxml.FXML

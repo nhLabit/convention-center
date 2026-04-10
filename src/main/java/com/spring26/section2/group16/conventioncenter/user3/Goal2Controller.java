@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -28,6 +29,13 @@ public class Goal2Controller
 
     @javafx.fxml.FXML
     public void initialize() {
+        userTypeCB.getItems().addAll("Admin", "Guest", "Customer", "Developer");
+
+
+        userIDCol.setCellValueFactory(new PropertyValueFactory<>());
+        nameCol.setCellValueFactory(new PropertyValueFactory<>());
+        roleCol.setCellValueFactory(new PropertyValueFactory<>());
+
     }
 
 
