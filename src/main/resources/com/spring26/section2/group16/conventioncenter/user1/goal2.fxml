@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.spring26.section2.group16.conventioncenter.user1.Goal2Controller"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.User1Goal2Controller">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="&lt; Back to Dashboard" textFill="#2f579a" />
+        <Text fill="#d43030" layoutX="188.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Hall Availability"><font><Font size="26.0" /></font></Text>
 
+        <Text layoutX="120.0" layoutY="120.0" text="Select Date:" />
+        <DatePicker fx:id="datePicker" layoutX="230.0" layoutY="103.0" prefWidth="200.0" />
+
+        <Text layoutX="120.0" layoutY="165.0" text="Select Hall:" />
+        <ComboBox fx:id="hallComboBox" layoutX="230.0" layoutY="148.0" prefWidth="200.0" />
+
+        <Button layoutX="250.0" layoutY="210.0" mnemonicParsing="false" onAction="#checkAvailabilityOnClick" prefHeight="35.0" prefWidth="125.0" text="Check Status" textFill="#207c2a" />
+        <Label fx:id="statusLabel" alignment="CENTER" layoutX="100.0" layoutY="270.0" prefWidth="400.0" textFill="#d43030" />
+    </children>
 </AnchorPane>

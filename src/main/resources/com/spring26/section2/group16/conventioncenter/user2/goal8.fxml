@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.spring26.section2.group16.conventioncenter.user2.Goal8Controller"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.User2Goal8Controller">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="&lt; Back to Dashboard" textFill="#2f579a" />
+        <Text fill="#d43030" layoutX="150.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trigger Emergency Alert"><font><Font name="System Bold" size="26.0" /></font></Text>
 
+        <Text layoutX="120.0" layoutY="120.0" text="Incident Type:" />
+        <ComboBox fx:id="alertTypeCombo" layoutX="240.0" layoutY="103.0" prefWidth="200.0" />
+
+        <Text layoutX="120.0" layoutY="165.0" text="Security PIN:" />
+        <PasswordField fx:id="pinField" layoutX="240.0" layoutY="148.0" prefWidth="200.0" />
+
+        <Button layoutX="240.0" layoutY="220.0" mnemonicParsing="false" onAction="#broadcastAlertOnClick" prefHeight="45.0" prefWidth="150.0" text="BROADCAST" textFill="WHITE" style="-fx-background-color: red; -fx-font-weight: bold;" />
+        <Label fx:id="alertStatus" alignment="CENTER" layoutX="100.0" layoutY="300.0" prefWidth="400.0"><font><Font size="14.0" /></font></Label>
+    </children>
 </AnchorPane>
