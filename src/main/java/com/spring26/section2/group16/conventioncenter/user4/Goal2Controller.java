@@ -21,7 +21,11 @@ public class Goal2Controller
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
+
+
+}
+
+
 
 
 
@@ -36,5 +40,25 @@ public class Goal2Controller
 
     @javafx.fxml.FXML
     public void submitOnClick(ActionEvent actionEvent) {
+
+        String reviewText = reviewTextArea.getText();
+
+        if (reviewText == null || reviewText.isEmpty()) {
+            System.out.println("Please write a review!");
+            return;
+        }
+
+        // checkbox check
+
+        if (anonymousCheckBox.isSelected()) {
+            System.out.println("Anonymous Review: " + reviewText);
+            labelL.setText("Anonymous review done");
+
+        } else {
+            System.out.println("User Review: " + reviewText);
+            labelL.setText("Review done with name");
+        }
+
     }
-}
+
+    }
