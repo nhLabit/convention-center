@@ -13,25 +13,19 @@ import java.io.IOException;
 public class Goal3Controller
 {
     @javafx.fxml.FXML
-    private Label lableL;
-    @javafx.fxml.FXML
-    private ComboBox hallCB;
-    @javafx.fxml.FXML
     private TableColumn hallNameCol;
     @javafx.fxml.FXML
-    private TableView hallTV;
+    private TableColumn dateCol;
+    @javafx.fxml.FXML
+    private TableView listTV;
+    @javafx.fxml.FXML
+    private TableColumn guestCol;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @Deprecated
-    public void doneOnClick(ActionEvent actionEvent) {
-    }
 
-    @javafx.fxml.FXML
-    public void checkOnClick(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void dashboardOnClick(ActionEvent actionEvent) throws IOException {
@@ -40,5 +34,9 @@ public class Goal3Controller
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
         currentStage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void loadOnClick(ActionEvent actionEvent) {
     }
 }
