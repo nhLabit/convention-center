@@ -16,7 +16,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void logVisitorOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal1.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal1.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -25,7 +25,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void infoLookupOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal2.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal2.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -34,7 +34,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void issueBadgesOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal3.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal3.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -43,7 +43,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void manageCallsOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal4.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal4.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -52,7 +52,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void mailLogOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal5.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal5.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -61,7 +61,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void viewScheduleOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal6.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal6.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -70,7 +70,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void bookAppointmentsOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal7.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal7.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
@@ -79,7 +79,7 @@ public class user2DashboardController {
 
     @javafx.fxml.FXML
     public void emergencyAlertOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2/goal8.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/user2/goal8.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);

@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.User2Goal2Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user2.Goal2Controller">
     <children>
         <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="&lt; Back to Dashboard" textFill="#2f579a" />
         <Text fill="#d43030" layoutX="200.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Lookup">
@@ -18,7 +18,7 @@
         <TextField fx:id="searchField" layoutX="210.0" layoutY="103.0" prefWidth="220.0" promptText="e.g., Rahman Wedding" />
 
         <Button layoutX="440.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchEventOnClick" text="Search" textFill="#207c2a" />
-
+//
         <Label fx:id="resultsLabel" alignment="TOP_LEFT" layoutX="100.0" layoutY="160.0" prefHeight="150.0" prefWidth="400.0" text="Results will appear here..." style="-fx-border-color: gray; -fx-padding: 10;" />
     </children>
 </AnchorPane>

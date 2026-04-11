@@ -26,4 +26,5 @@ public class Goal2Controller {
         stage.setScene(scene);
         stage.show();
     }
+    //
 }

@@ -29,7 +29,7 @@
 
         <Button layoutX="461.0" layoutY="274.0" mnemonicParsing="false" onAction="#homeOnClick" text="Home" textFill="#d42a10" wrapText="true">
             <font>
-                <Font size="13.0" />
+                <Font size="14.0" />
             </font>
         </Button>
     </children>

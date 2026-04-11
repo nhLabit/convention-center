@@ -27,3 +27,4 @@ public class Goal6Controller {
         stage.show();
     }
 }
+//

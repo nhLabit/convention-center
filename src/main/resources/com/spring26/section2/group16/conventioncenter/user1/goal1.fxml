@@ -31,7 +31,7 @@
                 <Font size="14.0" />
             </font>
         </Button>
-
+//
         <Label fx:id="statusLabel" layoutX="120.0" layoutY="310.0" prefHeight="20.0" prefWidth="400.0" textFill="#d43030" alignment="CENTER" />
     </children>
 </AnchorPane>

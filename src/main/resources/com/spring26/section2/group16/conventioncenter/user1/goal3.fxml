@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.User1Goal3Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user1.Goal3Controller">
     <children>
         <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="&lt; Back to Dashboard" textFill="#2f579a" />
         <Text fill="#d43030" layoutX="188.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Price Quotation">
@@ -21,7 +21,7 @@
         <TextField fx:id="cateringCostField" layoutX="230.0" layoutY="148.0" prefWidth="200.0" />
 
         <Button layoutX="250.0" layoutY="210.0" mnemonicParsing="false" onAction="#generateQuoteOnClick" prefHeight="35.0" prefWidth="125.0" text="Calculate Total" textFill="#207c2a" />
-
+//
         <Label fx:id="totalLabel" alignment="CENTER" layoutX="100.0" layoutY="280.0" prefHeight="20.0" prefWidth="400.0" text="Total: $0.00" textFill="#000000">
             <font><Font name="System Bold" size="18.0" /></font>
         </Label>
