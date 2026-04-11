@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal2Controller">
+<AnchorPane prefHeight="412.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal2Controller">
    <children>
-      <TextField fx:id="emailTF" layoutX="215.0" layoutY="57.0" />
-      <PasswordField fx:id="passwordPF" layoutX="216.0" layoutY="99.0" />
-      <Button layoutX="265.0" layoutY="139.0" mnemonicParsing="false" onAction="#loginOnClick" text="Login" textFill="#428428" />
-      <Label layoutX="110.0" layoutY="61.0" text="Enter Your Email:" />
-      <Label layoutX="52.0" layoutY="103.0" text="Enter The Correct Password:" />
-      <Label fx:id="labelL" layoutX="122.0" layoutY="191.0" prefHeight="58.0" prefWidth="330.0" text="Label" />
+      <Label fx:id="labelL" layoutX="151.0" layoutY="305.0" prefHeight="58.0" prefWidth="330.0" text="Label" />
+      <Label layoutX="216.0" text="Write a Review" textFill="#9e0c0c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="497.0" layoutY="363.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
+      <CheckBox fx:id="anonymousCheckBox" layoutX="66.0" layoutY="243.0" mnemonicParsing="false" text="Keep your name anonymous " />
+      <TextArea fx:id="reviewTextArea" layoutX="66.0" layoutY="37.0" prefHeight="192.0" prefWidth="468.0" />
+      <Button layoutX="248.0" layoutY="272.0" mnemonicParsing="false" onAction="#submitOnClick" text="Submit" />
    </children>
 </AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user6.goal3Controller">
+   <children>
+      <Label layoutX="210.0" layoutY="26.0" text="Add Payment Record">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="115.0" text="Amount:" />
+      <Label layoutX="37.0" layoutY="157.0" text="Payment method:" />
+      <Label layoutX="83.0" layoutY="192.0" text="Event ID:" />
+      <TextField fx:id="AmountTextField" layoutX="131.0" layoutY="111.0" prefHeight="26.0" prefWidth="158.0" />
+      <TextField fx:id="PaymentMethodTextField" layoutX="133.0" layoutY="153.0" prefHeight="26.0" prefWidth="157.0" />
+      <TextField fx:id="EventIDTextField" layoutX="132.0" layoutY="188.0" prefHeight="26.0" prefWidth="158.0" />
+      <Button layoutX="189.0" layoutY="239.0" mnemonicParsing="false" onAction="#SaveOnClick" text="Save" />
+      <Button layoutX="243.0" layoutY="239.0" mnemonicParsing="false" onAction="#CancelOnClick" text="Cancel" />
+      <Button layoutX="485.0" layoutY="327.0" mnemonicParsing="false" onAction="#DashboardOnClcik" text="Dashboard" />
+   </children>
+</AnchorPane>

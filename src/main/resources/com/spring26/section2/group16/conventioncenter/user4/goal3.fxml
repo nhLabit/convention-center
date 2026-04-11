@@ -3,15 +3,27 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="519.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal3Controller">
    <children>
-      <ListView fx:id="infoLV" layoutX="180.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
-      <ComboBox fx:id="hallCB" layoutX="225.0" layoutY="231.0" prefWidth="150.0" />
-      <Label layoutX="129.0" layoutY="235.0" text="Select a Hall:" />
-      <Label fx:id="lableL" layoutX="118.0" layoutY="344.0" prefHeight="46.0" prefWidth="378.0" text="Label" />
-      <Button layoutX="274.0" layoutY="284.0" mnemonicParsing="false" onAction="#checkOnClick" text="Check" />
+      <ComboBox fx:id="hallCB" layoutX="232.0" layoutY="283.0" prefWidth="150.0" />
+      <Label layoutX="139.0" layoutY="287.0" text="Select a Hall:" />
+      <Label fx:id="lableL" layoutX="118.0" layoutY="378.0" prefHeight="89.0" prefWidth="378.0" text="Label" />
+      <Button layoutX="283.0" layoutY="335.0" mnemonicParsing="false" onAction="#checkOnClick" text="Check" />
+      <TableView fx:id="hallTV" layoutX="146.0" layoutY="52.0" prefHeight="207.0" prefWidth="294.0">
+        <columns>
+          <TableColumn fx:id="hallNameCol" prefWidth="293.5999816894531" text="Hall Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="249.0" layoutY="5.0" text=" View halls" textFill="#bc1e1e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="563.0" layoutY="455.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
    </children>
 </AnchorPane>
