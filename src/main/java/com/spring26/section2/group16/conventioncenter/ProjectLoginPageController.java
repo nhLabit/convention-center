@@ -27,6 +27,22 @@ public class ProjectLoginPageController {
     @javafx.fxml.FXML
     public void signinOnClick(ActionEvent actionEvent) throws IOException {
         String loginUserType = userTypeComboBox.getValue();
+        if (loginUserType.equals("Sales Executive")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/dashboardofUsers/user1Dashboard.fxml"));
+            Scene dashboardScene = new Scene(fxmlLoader.load());
+            Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            currentStage.setScene(dashboardScene);
+            currentStage.show();
+
+        }
+        if (loginUserType.equals("Receptionist")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/dashboardofUsers/user2Dashboard.fxml"));
+            Scene dashboardScene = new Scene(fxmlLoader.load());
+            Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            currentStage.setScene(dashboardScene);
+            currentStage.show();
+
+        }
         if (loginUserType.equals("Admin")) {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/spring26/section2/group16/conventioncenter/dashboardofUsers/user3Dashboard.fxml"));
             Scene dashboardScene = new Scene(fxmlLoader.load());

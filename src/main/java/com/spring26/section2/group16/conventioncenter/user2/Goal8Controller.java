@@ -1,4 +1,4 @@
-package com.spring26.section2.group16.conventioncenter.user1;
+package com.spring26.section2.group16.conventioncenter.user2;
 
 import com.spring26.section2.group16.conventioncenter.HelloApplication;
 import javafx.event.ActionEvent;
@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 // ⚠️ IMPORTANT: Change "Goal1Controller" to match the file you are pasting this into (Goal2Controller, Goal3Controller, etc.)
-public class Goal2Controller {
+public class Goal8Controller {
 
     @FXML
     public void initialize() {
@@ -20,7 +20,7 @@ public class Goal2Controller {
 
     @FXML
     public void returnToDashboardOnClick(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user1Dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user2Dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
