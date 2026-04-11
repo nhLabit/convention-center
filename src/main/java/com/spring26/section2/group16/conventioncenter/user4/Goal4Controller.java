@@ -20,9 +20,11 @@ public class Goal4Controller
     @javafx.fxml.FXML
     private Label labelL;
     @javafx.fxml.FXML
-    private ComboBox <String>hallTF;
-    @javafx.fxml.FXML
     private DatePicker dateDP;
+    @javafx.fxml.FXML
+    private TextField bookingID;
+    @javafx.fxml.FXML
+    private ComboBox<String> hallCB;
 
     @javafx.fxml.FXML
     public void initialize() {
