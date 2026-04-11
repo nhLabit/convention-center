@@ -95,3 +95,4 @@ public class user2DashboardController {
         currentStage.show();
     }
 }
+
