@@ -23,6 +23,7 @@ public class goal6Controller
 
     @javafx.fxml.FXML
     public void initialize() {
+        SelectEventComboBox.getItems().addAll("Wedding Ceremony","Birthday Party","Corporate Meeting","Seminar","Music Concert");
     }
 
     @javafx.fxml.FXML
