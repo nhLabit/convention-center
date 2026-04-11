@@ -17,7 +17,7 @@ public class goal3Controller
     @javafx.fxml.FXML
     private TextField EventNameTextField;
     @javafx.fxml.FXML
-    private ComboBox HallComboBox;
+    private ComboBox<String> HallComboBox;
     @javafx.fxml.FXML
     private DatePicker EventDatedatepicker;
 

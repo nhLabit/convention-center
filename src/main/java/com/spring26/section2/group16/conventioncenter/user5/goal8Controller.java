@@ -18,7 +18,7 @@ public class goal8Controller
     @javafx.fxml.FXML
     private TableView EventTableView;
     @javafx.fxml.FXML
-    private ComboBox SelectHallCombox;
+    private ComboBox<String> SelectHallCombox;
     @javafx.fxml.FXML
     private Label outputShowLabel;
     @javafx.fxml.FXML
