@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user1DashboardController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user1DashboardController">
     <children>
         <Text fill="#d43030" layoutX="210.0" layoutY="42.0" stroke="#812020" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Executive">
             <font>
@@ -17,16 +17,16 @@
             </effect>
         </Text>
 
-        <Button layoutX="58.0" layoutY="82.0" mnemonicParsing="false" onAction="#manageLeadsOnClick" text="Manage Leads" />
-        <Button layoutX="264.0" layoutY="82.0" mnemonicParsing="false" onAction="#checkAvailabilityOnClick" text="Check Availability" />
+        <Button layoutX="268.0" layoutY="275.0" mnemonicParsing="false" onAction="#manageLeadsOnClick" text="Manage Leads" />
+        <Button layoutX="446.0" layoutY="174.0" mnemonicParsing="false" onAction="#checkAvailabilityOnClick" text="Check Availability" />
         <Button layoutX="454.0" layoutY="82.0" mnemonicParsing="false" onAction="#createQuotationsOnClick" text="Create Quotes" />
 
-        <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#manageFollowUpsOnClick" text="Follow-ups" />
+        <Button layoutX="61.0" layoutY="82.0" mnemonicParsing="false" onAction="#manageFollowUpsOnClick" text="Follow-ups" />
         <Button layoutX="271.0" layoutY="174.0" mnemonicParsing="false" onAction="#registerCorporateClientOnClick" text="Corp. Profiles" />
-        <Button layoutX="453.0" layoutY="174.0" mnemonicParsing="false" onAction="#applyDiscountsOnClick" text="Apply Discounts" />
+        <Button layoutX="263.0" layoutY="82.0" mnemonicParsing="false" onAction="#applyDiscountsOnClick" text="Apply Discounts" />
 
         <Button layoutX="56.0" layoutY="274.0" mnemonicParsing="false" onAction="#viewSalesTargetsOnClick" text="Sales Targets" />
-        <Button layoutX="273.0" layoutY="274.0" mnemonicParsing="false" onAction="#bookingHistoryOnClick" text="Booking History" />
+        <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#bookingHistoryOnClick" text="Booking History" />
 
         <Button layoutX="461.0" layoutY="274.0" mnemonicParsing="false" onAction="#homeOnClick" text="Home" textFill="#d42a10" wrapText="true">
             <font>

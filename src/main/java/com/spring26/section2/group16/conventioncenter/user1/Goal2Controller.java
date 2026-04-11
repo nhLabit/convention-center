@@ -10,17 +10,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-// ⚠️ IMPORTANT: Change "Goal1Controller" to match the file you are pasting this into (Goal2Controller, Goal3Controller, etc.)
+
 public class Goal2Controller {
 
     @FXML
     public void initialize() {
-        // We will put your specific goal logic here later!
+
     }
 
     @FXML
     public void returnToDashboardOnClick(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user1Dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardOfUsers/user1Dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
