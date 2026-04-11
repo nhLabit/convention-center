@@ -5,7 +5,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user1.Goal7Controller">
     <children>
-        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" text="&lt; Back to Dashboard" textFill="#2f579a" />
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToDashboardOnClick" text="&lt; Back to Dashboard" textFill="#2f579a" />
         <Text fill="#d43030" layoutX="170.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Sales Dashboard"><font><Font size="26.0" /></font></Text>
         <Label layoutX="150.0" layoutY="120.0" text="Monthly Revenue Target: $50,000" ><font><Font size="16.0" /></font></Label>
         <Label layoutX="150.0" layoutY="160.0" text="Current Revenue Achieved: $32,500" textFill="#207c2a"><font><Font name="System Bold" size="16.0" /></font></Label>
