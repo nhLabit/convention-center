@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public class Database {
     private int userID, hallCapacity;
-    private String maintenanceCategory, hallName, roleName, staffName, serviceName, reviewerName, userRole, userName;
+    private String maintenanceCategory, hallName, roleName, staffName, serviceName, reviewerName, userRole, userName, password;
     private LocalDate bookingDate;
 
-    public Database(int userID, int hallCapacity, String maintenanceCategory, String hallName, String roleName, String staffName, String serviceName, String reviewerName, String userRole, String userName, LocalDate bookingDate) {
+    public Database(String maintenanceCategory, String hallName, String roleName) {
         this.userID = userID;
         this.hallCapacity = hallCapacity;
         this.maintenanceCategory = maintenanceCategory;
@@ -18,6 +18,7 @@ public class Database {
         this.reviewerName = reviewerName;
         this.userRole = userRole;
         this.userName = userName;
+        this.password = password;
         this.bookingDate = bookingDate;
     }
 
@@ -101,6 +102,14 @@ public class Database {
         this.userName = userName;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public LocalDate getBookingDate() {
         return bookingDate;
     }
@@ -122,6 +131,7 @@ public class Database {
                 ", reviewerName='" + reviewerName + '\'' +
                 ", userRole='" + userRole + '\'' +
                 ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
                 ", bookingDate=" + bookingDate +
                 '}';
     }

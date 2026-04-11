@@ -23,7 +23,7 @@
       <Button layoutX="273.0" layoutY="274.0" mnemonicParsing="false" onAction="#LogOutOnClick" text="Delete User" />
       <Button layoutX="453.0" layoutY="174.0" mnemonicParsing="false" onAction="#StaffListOnClick" text="View staff list" />
       <Button layoutX="271.0" layoutY="174.0" mnemonicParsing="false" onAction="#RolesOnClick" text="Manage roles" />
-      <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#HallInfoOnClick" text="Update hall information" />
+      <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#HallInfoOnClick" text="Add New User" />
       <Button layoutX="461.0" layoutY="274.0" mnemonicParsing="false" onAction="#homeOnClick" text="Home" textFill="#d42a10" wrapText="true">
          <font>
             <Font size="13.0" />
