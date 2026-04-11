@@ -21,7 +21,7 @@
             <Font size="18.0" />
          </font></Label>
       <Button layoutX="450.0" layoutY="100.0" mnemonicParsing="false" onAction="#filterOnClick" text="Filter " />
-      <Button layoutX="466.0" layoutY="332.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
+      <Button layoutX="466.0" layoutY="332.0" mnemonicParsing="false" onAction="#DashboardOnClick" text="Dashboard" />
       <ComboBox fx:id="filterDataCB" layoutX="450.0" layoutY="57.0" prefWidth="150.0" />
       <Label layoutX="339.0" layoutY="61.0" text="Filter Data By Role:" />
    </children>

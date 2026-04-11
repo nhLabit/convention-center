@@ -16,8 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Goal3Controller
-{
+public class Goal3Controller {
     @javafx.fxml.FXML
     private TableView<Database> UserListTV;
     @javafx.fxml.FXML
@@ -28,7 +27,6 @@ public class Goal3Controller
     private TableColumn<Database, String> roleCol;
 
     private List<Database> databaseArray1 = new ArrayList<>();
-
 
 
     @javafx.fxml.FXML
@@ -43,21 +41,47 @@ public class Goal3Controller
     }
 
     @javafx.fxml.FXML
-    public void filterOnClick(ActionEvent actionEvent) {
+    public void filterOnClick(ActionEvent actionEvent) throws IOException {
         if (filterDataCB.getValue().equals("Customer")) {
+            for (Database d : databaseArray1) {
+                if (d.getRoleName().equals("Admin")) {
+                    UserListTV.getItems().addAll(d);
+                }
+            }
+            if (filterDataCB.getValue().equals("Guest")) {
+                for (Database d : databaseArray1) {
+                    if (d.getRoleName().equals("Guest")) {
+                        UserListTV.getItems().addAll(d);
+                    }
+                }
 
+                if (filterDataCB.getValue().equals("Developer")) {
+                    for (Database d : databaseArray1) {
+                        if (d.getRoleName().equals("Developer")) {
+                            UserListTV.getItems().addAll(d);
+                        }
+                    }
 
-    }
-
-
+                    if (filterDataCB.getValue().equals("Guest")) {
+                        for (Database d : databaseArray1) {
+                            if (d.getRoleName().equals("Guest")) {
+                                UserListTV.getItems().addAll(d);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @javafx.fxml.FXML
-    public void dashboardOnClick(ActionEvent actionEvent) throws IOException {
+    public void DashboardOnClick(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardofUsers/user3Dashboard.fxml"));
         Scene dashboardScene = new Scene(fxmlLoader.load());
         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(dashboardScene);
         currentStage.show();
+
     }
 }
+

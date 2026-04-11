@@ -40,7 +40,41 @@ public class Goal1Controller
     @javafx.fxml.FXML
     public void saveOnClick(ActionEvent actionEvent) {
 
+            String category = categoryCB.getValue();
+            boolean isChecked = assignTechnicianCheckBox.isSelected();
 
+            if (category == null) {
+                labelL.setText("Please select a category");
+                return;
+            }
 
+            if (category.equals("Electrical")) {
+
+                if (isChecked) {
+                    labelL.setText("electrical working on progress and worker assigned");
+                } else {
+                    labelL.setText("electrical working on progress and no worker assigned");
+                }
+            }
+        if (category.equals("Mechanical")) {
+
+            if (isChecked) {
+                labelL.setText("Mechanical working on progress and worker assigned");
+            } else {
+                labelL.setText("Mechanical working on progress and no worker assigned");
+            }
+        }
+        if (category.equals("Development")) {
+
+            if (isChecked) {
+                labelL.setText("Development working on progress and worker assigned");
+            } else {
+                labelL.setText("Development working on progress and no worker assigned");
+            }
+        }
+
+        }
     }
-}
+
+
+

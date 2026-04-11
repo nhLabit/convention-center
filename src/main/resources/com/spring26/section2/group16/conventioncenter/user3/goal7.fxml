@@ -19,9 +19,10 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="staffNameTV" layoutX="86.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="staffNameTV" layoutX="14.0" layoutY="37.0" prefHeight="200.0" prefWidth="285.0">
         <columns>
-          <TableColumn fx:id="staffNameCol" prefWidth="199.20001220703125" text="Staff Name" />
+          <TableColumn fx:id="staffNameCol" prefWidth="144.0" text="Staff Name" />
+            <TableColumn fx:id="roleCol" prefWidth="144.0" text="Role" />
         </columns>
       </TableView>
       <Button layoutX="499.0" layoutY="346.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" />
