@@ -31,7 +31,7 @@ public class Goal2Controller
     @javafx.fxml.FXML
     private TableColumn <Database, String>roleCol;
 
-    private List<Database> databaseArray1 = new ArrayList<>();
+    private List<Database> databaseArray2 = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -45,7 +45,7 @@ public class Goal2Controller
         nameCol.setCellValueFactory(new PropertyValueFactory<>("staffName"));
         roleCol.setCellValueFactory(new PropertyValueFactory<>("roleName"));
 
-        userListTV.getItems().addAll(databaseArray1);
+        userListTV.getItems().addAll(databaseArray2);
 
     }
 

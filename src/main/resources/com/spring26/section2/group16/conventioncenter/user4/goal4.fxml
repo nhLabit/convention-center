@@ -10,10 +10,10 @@
 
 <AnchorPane prefHeight="354.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.user4.Goal4Controller">
    <children>
-      <ComboBox fx:id="hallTF" layoutX="232.0" layoutY="36.0" prefWidth="150.0" />
+      <ComboBox fx:id="hallCB" layoutX="232.0" layoutY="36.0" prefWidth="150.0" />
       <DatePicker fx:id="dateDP" layoutX="232.0" layoutY="79.0" />
       <TextField fx:id="guestTF" layoutX="233.0" layoutY="122.0" />
-      <Button layoutX="254.0" layoutY="168.0" mnemonicParsing="false" onAction="#bookingOnClick" text="Confirm Booking" textFill="#1f8664" />
+      <Button layoutX="254.0" layoutY="198.0" mnemonicParsing="false" onAction="#bookingOnClick" text="Confirm Booking" textFill="#1f8664" />
       <Label layoutX="140.0" layoutY="40.0" text="Select a Halll:" />
       <Label layoutX="140.0" layoutY="83.0" text="Select a Date:" />
       <Label layoutX="128.0" layoutY="126.0" text="Number of Guest:" />
@@ -24,5 +24,7 @@
          </font>
       </Label>
       <Button layoutX="407.0" layoutY="295.0" mnemonicParsing="false" onAction="#dashboardOnClick" text="Dashboard" textFill="#1f8664" />
+      <TextField fx:id="bookingID" layoutX="232.0" layoutY="164.0" />
+      <Label layoutX="78.0" layoutY="168.0" text="Enter a Unique Booking ID:" />
    </children>
 </AnchorPane>

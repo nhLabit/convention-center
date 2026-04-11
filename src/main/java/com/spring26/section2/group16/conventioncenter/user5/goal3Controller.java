@@ -23,6 +23,7 @@ public class goal3Controller
 
     @javafx.fxml.FXML
     public void initialize() {
+        HallComboBox.getItems().addAll("Main Auditorium","VIP Hall","Seminar Room","Wedding Hall","Meeting Room");
     }
 
     @javafx.fxml.FXML

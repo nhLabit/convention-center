@@ -26,6 +26,7 @@ public class goal8Controller
 
     @javafx.fxml.FXML
     public void initialize() {
+        SelectHallCombox.getItems().addAll("Main Auditorium","VIP Hall","Seminar Room","Wedding Hall","Meeting Room");
     }
 
     @javafx.fxml.FXML

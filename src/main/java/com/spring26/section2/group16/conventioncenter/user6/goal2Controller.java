@@ -13,10 +13,11 @@ import java.io.IOException;
 public class goal2Controller
 {
     @javafx.fxml.FXML
-    private ComboBox SelectEventComboBox;
+    private ComboBox<String> SelectEventComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {
+        SelectEventComboBox.getItems().addAll("Wedding Ceremony","Birthday Party","Corporate Meeting","Seminar","Music Concert");
     }
 
     @javafx.fxml.FXML
