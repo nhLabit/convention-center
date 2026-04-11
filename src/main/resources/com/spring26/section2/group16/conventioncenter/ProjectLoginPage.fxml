@@ -9,10 +9,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="369.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring26.section2.group16.conventioncenter.ProjectLoginPageController">
    <children>
-      <Text fill="#cc09af" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulating operations of Bashundhara Convention Centre">
+      <Text fill="#cc09af" layoutX="37.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulating Operations of Bashundhara Convention Centre">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
