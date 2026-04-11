@@ -17,7 +17,7 @@ public class goal6Controller
     @javafx.fxml.FXML
     private TableColumn AvailableStaffCol;
     @javafx.fxml.FXML
-    private ComboBox SelectEventComboBox;
+    private ComboBox<String> SelectEventComboBox;
     @javafx.fxml.FXML
     private TableView AvaiableStafftableView;
 
