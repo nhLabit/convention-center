@@ -1,6 +1,7 @@
 package com.spring26.section2.group16.conventioncenter.user4;
 
 import com.spring26.section2.group16.conventioncenter.HelloApplication;
+import com.spring26.section2.group16.conventioncenter.NonUser.AppendableObjectOutputStream;
 import com.spring26.section2.group16.conventioncenter.NonUser.Database;
 import com.spring26.section2.group16.conventioncenter.NonUser.U4G4;
 import javafx.event.ActionEvent;
@@ -13,7 +14,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +49,38 @@ public class Goal4Controller
             labelL.setText("Field can't be empty");
             return;
         }
+
+        //(int numberOfGuest, int bookingID, String hallName, LocalDate bookingDate)
+        U4G4 i = new U4G4(Integer.parseInt(guestTF.getText()),
+                Integer.parseInt(bookingID.getText()),
+                hallCB.getValue(),
+                dateDP.getValue());
+
+        try {
+            File teamFile = new File("booking.bin");
+            FileOutputStream fos = null;
+            ObjectOutputStream oos = null;
+
+            if (teamFile.exists()){
+                fos = new FileOutputStream(teamFile, true);
+
+                oos = new AppendableObjectOutputStream(fos);
+                System.out.println("appendable");
+            }
+            else {
+                fos = new FileOutputStream(teamFile);
+                System.out.println("new");
+                oos = new ObjectOutputStream(fos);
+            }
+            oos.writeObject(i);
+            oos.close();
+            System.out.println("Object saved");
+        } catch (Exception e) {
+            System.out.println("Not saved");;
+        }
+
+
+
 //        for (Database i : databaseArray5 ){
 //            if (i.getBookingID().equals(bookingID.getText())){
 //                labelL.setText("provide unique number");

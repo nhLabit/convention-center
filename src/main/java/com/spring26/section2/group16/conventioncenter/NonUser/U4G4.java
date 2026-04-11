@@ -1,13 +1,14 @@
 package com.spring26.section2.group16.conventioncenter.NonUser;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class U4G4 {
+public class U4G4 implements Serializable {
     private int numberOfGuest, bookingID;
     private String hallName;
     private LocalDate bookingDate;
 
-    public U4G4(String numberOfGuest, int bookingID, String hallName, LocalDate bookingDate) {
+    public U4G4(int numberOfGuest, int bookingID, String hallName, LocalDate bookingDate) {
         this.numberOfGuest = numberOfGuest;
         this.bookingID = bookingID;
         this.hallName = hallName;
