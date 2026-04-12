@@ -12,6 +12,5 @@
         <ProgressBar fx:id="targetProgressBar" layoutX="150.0" layoutY="210.0" prefHeight="25.0" prefWidth="300.0" progress="0.65" />
         <Label layoutX="260.0" layoutY="250.0" text="65% Completed" />
         <Button layoutX="250.0" layoutY="300.0" mnemonicParsing="false" onAction="#refreshStatsOnClick" text="Refresh Stats" />
-    //
     </children>
 </AnchorPane>

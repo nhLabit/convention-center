@@ -13,7 +13,7 @@
 
         <Text layoutX="120.0" layoutY="165.0" text="Select Hall:" />
         <ComboBox fx:id="hallComboBox" layoutX="230.0" layoutY="148.0" prefWidth="200.0" />
-//
+
         <Button layoutX="250.0" layoutY="210.0" mnemonicParsing="false" onAction="#checkAvailabilityOnClick" prefHeight="35.0" prefWidth="125.0" text="Check Status" textFill="#207c2a" />
         <Label fx:id="statusLabel" alignment="CENTER" layoutX="100.0" layoutY="270.0" prefWidth="400.0" textFill="#d43030" />
     </children>

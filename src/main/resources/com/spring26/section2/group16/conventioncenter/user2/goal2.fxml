@@ -18,7 +18,7 @@
         <TextField fx:id="searchField" layoutX="210.0" layoutY="103.0" prefWidth="220.0" promptText="e.g., Rahman Wedding" />
 
         <Button layoutX="440.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchEventOnClick" text="Search" textFill="#207c2a" />
-//
+
         <Label fx:id="resultsLabel" alignment="TOP_LEFT" layoutX="100.0" layoutY="160.0" prefHeight="150.0" prefWidth="400.0" text="Results will appear here..." style="-fx-border-color: gray; -fx-padding: 10;" />
     </children>
 </AnchorPane>

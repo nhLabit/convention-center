@@ -13,7 +13,6 @@
 
         <Text layoutX="120.0" layoutY="165.0" text="Security PIN:" />
         <PasswordField fx:id="pinField" layoutX="240.0" layoutY="148.0" prefWidth="200.0" />
-
         <Button layoutX="240.0" layoutY="220.0" mnemonicParsing="false" onAction="#broadcastAlertOnClick" prefHeight="45.0" prefWidth="150.0" text="BROADCAST" textFill="WHITE" style="-fx-background-color: red; -fx-font-weight: bold;" />
         <Label fx:id="alertStatus" alignment="CENTER" layoutX="100.0" layoutY="300.0" prefWidth="400.0"><font><Font size="14.0" /></font></Label>
     </children>

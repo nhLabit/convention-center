@@ -10,6 +10,5 @@
         <TextField fx:id="searchClientField" layoutX="120.0" layoutY="90.0" prefWidth="250.0" promptText="Search Client Name..." />
         <Button layoutX="390.0" layoutY="90.0" mnemonicParsing="false" onAction="#searchHistoryOnClick" text="Search" />
         <TextArea fx:id="historyArea" layoutX="80.0" layoutY="140.0" prefHeight="200.0" prefWidth="440.0" editable="false" />
-    //
     </children>
 </AnchorPane>

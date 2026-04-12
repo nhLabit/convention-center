@@ -10,6 +10,5 @@
         <DatePicker fx:id="scheduleDatePicker" layoutX="200.0" layoutY="80.0" />
         <Button layoutX="400.0" layoutY="80.0" mnemonicParsing="false" onAction="#loadScheduleOnClick" text="Load" />
         <TextArea fx:id="scheduleArea" layoutX="80.0" layoutY="130.0" prefHeight="220.0" prefWidth="440.0" editable="false" promptText="Select a date and click load..." />
-
     </children>
 </AnchorPane>

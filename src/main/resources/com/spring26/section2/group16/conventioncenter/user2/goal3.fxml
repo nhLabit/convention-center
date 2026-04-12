@@ -18,7 +18,7 @@
         <TextField fx:id="visitorNameField" layoutX="230.0" layoutY="103.0" prefWidth="200.0" />
 
         <Button layoutX="250.0" layoutY="160.0" mnemonicParsing="false" onAction="#generateBadgeOnClick" prefHeight="35.0" prefWidth="125.0" text="Print Badge" textFill="#207c2a" />
-//
+
         <Label fx:id="badgeStatusLabel" alignment="CENTER" layoutX="100.0" layoutY="220.0" prefHeight="80.0" prefWidth="400.0" text="..." style="-fx-border-color: black; -fx-background-color: #f0f0f0;" />
     </children>
 </AnchorPane>

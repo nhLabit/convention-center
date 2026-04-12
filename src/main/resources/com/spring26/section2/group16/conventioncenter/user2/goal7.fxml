@@ -13,7 +13,7 @@
 
         <Text layoutX="120.0" layoutY="165.0" text="Date:" />
         <DatePicker fx:id="appointmentDate" layoutX="240.0" layoutY="148.0" prefWidth="200.0" />
-//
+
         <Button layoutX="250.0" layoutY="220.0" mnemonicParsing="false" onAction="#bookMeetingOnClick" prefHeight="35.0" prefWidth="125.0" text="Confirm Booking" textFill="#207c2a" />
         <Label fx:id="statusLabel" alignment="CENTER" layoutX="100.0" layoutY="280.0" prefWidth="400.0" />
     </children>

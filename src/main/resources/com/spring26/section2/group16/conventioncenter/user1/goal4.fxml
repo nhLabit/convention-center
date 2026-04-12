@@ -16,7 +16,7 @@
 
         <Text layoutX="80.0" layoutY="180.0" text="Interaction Notes:" />
         <TextArea fx:id="notesArea" layoutX="190.0" layoutY="167.0" prefHeight="80.0" prefWidth="300.0" />
-//
+
         <Button layoutX="250.0" layoutY="270.0" mnemonicParsing="false" onAction="#saveLogOnClick" prefHeight="35.0" prefWidth="125.0" text="Save Log" textFill="#207c2a" />
         <Label fx:id="feedbackLabel" alignment="CENTER" layoutX="100.0" layoutY="320.0" prefWidth="400.0" textFill="#d43030" />
     </children>
